@@ -1,0 +1,45 @@
+html{height:100.05%;}
+
+body {
+      font-family : Times, Arial, Verdana, Geneva, Helvetica, sans-serif;
+      font-size : 10pt;
+      background-color : white;
+      color : black;
+}
+
+td { font-size : 10pt; font-family : Arial, Times, Verdana, Geneva, Helvetica, sans-serif;}
+	
+A:link {background-color: transparent; color: blue; text-decoration: none}
+A:visited {background-color: transparent; color: blue; text-decoration: none}
+A:active {background-color: transparent; color: blue; text-decoration: none}
+A:hover {background-color: transparent; color: red; text-decoration: none}
+
+a.menuLink:link {background-color: transparent; color: Blue; text-decoration : none;}
+
+a.menuLink:visited {background-color: transparent; color: Blue; text-decoration : none;}
+
+a.menuLink:hover {background-color : lightblue; color : White; text-decoration : none;}
+
+a.menuLinkRed:link {background-color: transparent; color: Red; text-decoration : none; }
+
+a.menuLinkRed:visited {background-color: transparent; color: Red; text-decoration : none;}
+
+a.menuLinkRed:hover {background-color : red; color : White; ext-decoration : none;}
+
+
+
+a.menuLinkRedDashed:link {background-color: transparent; color: Red; text-decoration : none; border-bottom : 1px dashed;}
+
+a.menuLinkRedDashed:visited {background-color: transparent; color: Red; text-decoration : none; border-bottom : 1px dashed;}
+
+a.menuLinkRedDashed:hover {background-color : red; color : White; ext-decoration : none; border-bottom : 1px dashed;}
+
+
+
+table.yellowBorder {border: 1px solid rgb(128,255,128); background-color : lightYellow; }
+
+td.lightYellow{background-color : lightYellow;}
+
+td.goldenRod{background-color : rgb(245, 255, 189);}
+
+tr.lightYellow{background-color : lightYellow;}
