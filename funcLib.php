@@ -12,7 +12,7 @@ if(!isset($base_dir)){
   }
 }
 
-check_sesion($base_url);
+check_sesion();
 
 $link = @(mysql_connect($db_loc, $db_userid, $db_pass));
 if(!$link){
@@ -25,22 +25,17 @@ else{
   mysql_select_db($db_name);
 }
 
-function check_sesion($base_url) {
+function check_sesion() {
     if(!isset($_SESSION)){
       session_name("WishListSite");
       session_start();
 
       if (!isset($_SESSION["userid"])) {
 
-          echo $base_url;
-
         // if the page that is including this file has not set $ignoreSession then
         // redirect the user to login
         if(!isset($ignoreSession)){
-          //"http://".$_SERVER["HTTP_HOST"]."/login.php";
-          $login_location = $base_url.'/login.php';
-          echo $login_location;
-          header("Location: " . $login_location);
+          header("Location: " . $base_url.'/login.php');
           exit;
         }
       }
