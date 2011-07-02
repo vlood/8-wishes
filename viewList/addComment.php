@@ -72,7 +72,7 @@ else{
 <td valign="top">
 
 <?php
-createNavBar("../home.php:Home|viewList.php?recip=" . $_REQUEST["recip"] . "&name=" . $_REQUEST["name"] . ":View List - " . $_REQUEST["name"] . "|:Add Comment", false, "addComment");
+createNavBar("../index.php:Home|viewList.php?recip=" . $_REQUEST["recip"] . "&name=" . $_REQUEST["name"] . ":View List - " . $_REQUEST["name"] . "|:Add Comment", false, "addComment");
 ?>
 
 <table><tr><td>

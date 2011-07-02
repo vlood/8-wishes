@@ -30,7 +30,7 @@ $name = $_REQUEST["name"];
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|viewList.php?recip=" . $recip . "&name=" . $name . ":View List - " . $name . "|:View Log " . $name, false, "");
+createNavBar("../index.php:Home|viewList.php?recip=" . $recip . "&name=" . $name . ":View List - " . $name . "|:View Log " . $name, false, "");
 ?>
 
 <p>

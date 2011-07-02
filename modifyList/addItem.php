@@ -84,7 +84,7 @@ if(isset($_REQUEST["amazonLookup"])){
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Add Item");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Add Item");
 ?>
 
 <center>

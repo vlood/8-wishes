@@ -26,7 +26,7 @@ include "../funcLib.php";
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Add Category");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Add Category");
 ?>
 
 <center>

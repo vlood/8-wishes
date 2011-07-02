@@ -415,7 +415,7 @@ function createPage($amazonTag, $amazonDevTag){
       <td valign="top">
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Add Item From Web");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Add Item From Web");
 ?>
 
       <center>

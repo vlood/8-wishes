@@ -34,7 +34,7 @@ if (get_magic_quotes_gpc()==1) {
 ?>
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Edit Category");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Edit Category");
 ?>
 
 <center>

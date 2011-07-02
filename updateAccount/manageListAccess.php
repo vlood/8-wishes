@@ -135,7 +135,7 @@ elseif ($action == "hideContactInfo"){
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|updateAccount.php:Update Account|:Manage List Access", false, "listAccess");
+createNavBar("../index.php:Home|updateAccount.php:Update Account|:Manage List Access", false, "listAccess");
 ?>
 
 <center>

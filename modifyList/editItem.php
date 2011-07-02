@@ -34,7 +34,7 @@ if (get_magic_quotes_gpc()==1) {
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Edit Item", false, "deleteItem");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Edit Item", false, "deleteItem");
 ?>
 
 <p>&nbsp;

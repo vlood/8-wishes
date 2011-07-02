@@ -12,7 +12,7 @@ if(!isset($base_dir)){
   }
 }
 
-check_sesion();
+check_sesion($base_url);
 
 $link = @(mysql_connect($db_loc, $db_userid, $db_pass));
 if(!$link){
@@ -25,7 +25,7 @@ else{
   mysql_select_db($db_name);
 }
 
-function check_sesion() {
+function check_sesion($base_url) {
     if(!isset($_SESSION)){
       session_name("WishListSite");
       session_start();
@@ -35,6 +35,7 @@ function check_sesion() {
         // if the page that is including this file has not set $ignoreSession then
         // redirect the user to login
         if(!isset($ignoreSession)){
+          echo $base_url;
           header("Location: " . $base_url.'/login.php');
           exit;
         }
@@ -175,7 +176,7 @@ function sendEmail($to, $from, $subject, $message, $debug){
   $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
   
   $message = "<html><body><small>This is an automated message from the " .
-    "<a href=\"". getFullPath("home.php") . "\">WishList Site</a>." .
+    "<a href=\"" . $base_url . "/index.php" . "\">WishList Site</a>." .
     "</small><p>" . $message . "</body></html>";
 
   if (mail($to, $subject, str_replace("<br>", "<br>\r\n", str_replace(". ", ". \r\n", $message)), $from . $headers)){
@@ -215,7 +216,7 @@ function TESTsendEmail($to, $from, $subject, $message, $debug){
               "Content-Transfer-Encoding: 8bit\r\n" .
               "Content-Disposition: inline\r\n\r\n" .
               "<html><body><small>This is an automated message from the " .
-              "<a href=\"". getFullPath("home.php") . "\">WishList Site</a>." .
+              "<a href=\"". $base_url . "/index.php" . "\">WishList Site</a>." .
               "</small><p>" . $message . "</body></html>\r\n" .
               "--" . $boundary . "--\r\n";
 
@@ -245,7 +246,7 @@ function sendEmailFromFavorites($to, $from, $subject, $message, $debug){
   $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
   
   $message = "<html><body><small>This is an automated message from the " .
-    "<a href=\"". getFullPath("home.php") . "\">Favorites Site</a>." .
+    "<a href=\"". $base_url . "/index.php" . "\">Favorites Site</a>." .
     "</small><p>" . $message . "</body></html>";
 
   if (mail($to, $subject, str_replace("<br>", "<br>\r\n", str_replace(". ", ". \r\n", $message)), $from . $headers)){

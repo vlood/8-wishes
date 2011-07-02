@@ -65,7 +65,7 @@ else{
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Delete Category");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Delete Category");
 ?>
 
 <h2>Delete <?php echo str_replace("\\", "", $cname); ?> Category</h2>

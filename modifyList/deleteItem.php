@@ -62,7 +62,7 @@ $query = "select items.title, items.addStar, items.description, price, " .
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Delete Item");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Delete Item");
 ?>
 
 <table width="100%" height="100%">

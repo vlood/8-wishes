@@ -238,7 +238,7 @@ function hash(form) {
 </script>
 
 <?php
-createNavBar("../home.php:Home|updateAccount.php:Update Account|:Change Password", false, "password");
+createNavBar("../index.php:Home|updateAccount.php:Update Account|:Change Password", false, "password");
 ?>
 
 <?php

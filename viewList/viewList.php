@@ -21,7 +21,7 @@ $name = $_REQUEST["name"];
 $confirm = $_REQUEST["confirm"];
 
 if($confirm == "No"){
-     header("Location: " . getFullPath("../home.php"));
+     header("Location: " . $base_url . "../index.php");
 }
 ?>
 <HTML>
@@ -54,7 +54,7 @@ if($recip != $userid){
 <td valign="top">
 
 <?php
-createNavBar("../home.php:Home|:View List - " . $_REQUEST["name"], false, "viewOther");
+createNavBar("../index.php:Home|:View List - " . $_REQUEST["name"], false, "viewOther");
 ?>
 
 <br>

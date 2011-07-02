@@ -34,7 +34,7 @@ if (isset($_REQUEST["action"])) {
 
 if(isset($_SESSION['userid'])){
    // already logged in
-   header("Location: home.php");
+   header("Location: " . $base_url . "/index.php");
    return;
 }
 
@@ -68,7 +68,7 @@ if (!empty($_REQUEST["userid"])) {
       $_SESSION["userid"] = $row["userid"];
       $_SESSION["fullname"] = $row["firstname"] . " " . $row["lastname"] . ' ' . $row["suffix"];
       $_SESSION["admin"] = $row["admin"];
-      header("Location: home.php");
+      header("Location: " . $base_url . "/index.php");
       mysql_free_result($rs);
       
       $query = "update people set lastLoginDate=NOW() where userid='" .

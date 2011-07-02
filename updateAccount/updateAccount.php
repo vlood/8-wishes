@@ -27,7 +27,7 @@ include "../funcLib.php";
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|:Update Account", false, "");
+createNavBar("../index.php:Home|:Update Account", false, "");
 ?>
 
 <center>

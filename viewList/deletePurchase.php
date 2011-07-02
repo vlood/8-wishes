@@ -81,7 +81,7 @@ else{
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|viewList.php?recip=" . $recip . "&name=" . $name . ":View List - " . $name . "|viewLog.php?recip=$recip&name=$name:View Log - $name|:Delete Purchase", false, "");
+createNavBar("../index.php:Home|viewList.php?recip=" . $recip . "&name=" . $name . ":View List - " . $name . "|viewLog.php?recip=$recip&name=$name:View Log - $name|:Delete Purchase", false, "");
 ?>
 
 <h2>Delete Purchase</h2>

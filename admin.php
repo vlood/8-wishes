@@ -179,7 +179,7 @@ elseif($_REQUEST["action"] == "changeAdmin"){
 <td valign="top">
 
 <?php
-createNavBar("home.php:Home|:Admin Page");
+createNavBar("./index.php:Home|:Admin Page");
 ?>
 
 <center>
@@ -424,7 +424,7 @@ else{
 <td valign="top">
 
 <?php
-createNavBar("home.php:Home|admin.php:Admin Page|:Change WishList Settings");
+createNavBar("../index.php:Home|admin.php:Admin Page|:Change WishList Settings");
 ?>
 
 <center>

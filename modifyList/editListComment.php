@@ -39,7 +39,7 @@ if($_REQUEST["update"] != ""){
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|modifyList.php:Modify WishList|:Edit List Comment");
+createNavBar("../index.php:Home|modifyList.php:Modify WishList|:Edit List Comment");
 ?>
 
 <center>

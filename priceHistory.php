@@ -76,7 +76,7 @@ if($_REQUEST["js"]){
 <td valign="top">
 
 <?php
-createNavBar("home.php:Home|:Price History");
+createNavBar("../index.php:Home|:Price History");
 ?>
 
 <center>

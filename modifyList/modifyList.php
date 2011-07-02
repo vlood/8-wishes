@@ -32,7 +32,7 @@ include "../funcLib.php";
 <td valign="top" >
 
 <?php
-createNavBar("../home.php:Home|:Modify WishList");
+createNavBar("../index.php:Home|:Modify WishList");
 ?>
 
 <table width="100%"><tr><td>
